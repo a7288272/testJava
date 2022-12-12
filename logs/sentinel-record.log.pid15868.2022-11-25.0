@@ -1,0 +1,45 @@
+2022-11-25 17:17:00.454 INFO App name resolved from property csp.sentinel.app.name: test
+2022-11-25 17:17:00.454 INFO [SentinelConfig] Application type resolved: 0
+2022-11-25 17:17:00.456 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit
+2022-11-25 17:17:00.458 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc
+2022-11-25 17:17:00.459 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc
+2022-11-25 17:17:00.461 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.init.ParamFlowStatisticSlotCallbackInit
+2022-11-25 17:17:00.524 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.cluster.server.init.DefaultClusterServerInitFunc
+2022-11-25 17:17:00.525 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.cluster.client.init.DefaultClusterClientInitFunc
+2022-11-25 17:17:00.531 INFO [SpiLoader] Found CommandCenter SPI: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter with order 2147483647
+2022-11-25 17:17:00.532 INFO [CommandCenterProvider] CommandCenter resolved: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2022-11-25 17:17:00.558 INFO [CommandCenterInit] Starting command center: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2022-11-25 17:17:00.558 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc with order -1
+2022-11-25 17:17:00.565 INFO [SimpleHttpHeartbeatSender] Default console address list retrieved: [Tuple2{r1=127.0.0.1, r2=8080}]
+2022-11-25 17:17:00.565 INFO [SpiLoader] Found HeartbeatSender SPI: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender with order 2147483647
+2022-11-25 17:17:00.565 INFO [HeartbeatSenderProvider] HeartbeatSender activated: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2022-11-25 17:17:00.566 INFO [HeartbeatSenderInit] Heartbeat interval not configured in config property or invalid, using sender default: 10000
+2022-11-25 17:17:00.567 INFO [HeartbeatSenderInit] HeartbeatSender started: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2022-11-25 17:17:00.567 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc with order -1
+2022-11-25 17:17:00.574 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.cluster.client.init.DefaultClusterClientInitFunc with order 0
+2022-11-25 17:17:00.576 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit with order 2147483647
+2022-11-25 17:17:00.579 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.init.ParamFlowStatisticSlotCallbackInit with order 2147483647
+2022-11-25 17:17:00.591 INFO [TokenServiceProvider] Global token service resolved: com.alibaba.csp.sentinel.cluster.flow.DefaultTokenService
+2022-11-25 17:17:00.591 INFO [DefaultClusterServerInitFunc] Default entity codec and processors registered
+2022-11-25 17:17:00.591 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.cluster.server.init.DefaultClusterServerInitFunc with order 2147483647
+2022-11-25 17:17:02.628 INFO [SystemRuleManager] Current system check status: false, highestSystemLoad: 1.797693e+308, highestCpuUsage: 1.797693e+308, maxRt: 9223372036854775807, maxThread: 9223372036854775807, maxQps: 1.797693e+308
+2022-11-25 17:17:08.757 INFO [DynamicSentinelProperty] Config will be updated to: []
+2022-11-25 17:17:08.765 INFO [DegradeRuleManager] Degrade rules loaded: {}
+2022-11-25 17:17:08.768 INFO [DegradeRuleManager] Registering new property to degrade rule manager
+2022-11-25 17:17:08.768 INFO [DegradeRuleManager] Degrade rules loaded: {}
+2022-11-25 17:17:21.417 INFO Add child <sentinel_default_context> to node <machine-root>
+2022-11-25 17:17:21.418 INFO Add child <sentinel_spring_web_context> to node <machine-root>
+2022-11-25 17:17:21.428 INFO [SlotChainProvider] Global slot chain builder resolved: com.alibaba.csp.sentinel.slots.DefaultSlotChainBuilder
+2022-11-25 17:17:21.450 INFO Add child <GET:/hello> to node <sentinel_spring_web_context>
+2022-11-25 17:17:21.452 INFO [AuthorityRuleManager] Load authority rules: {}
+2022-11-25 17:17:21.461 INFO [ParamFlowRuleManager] No parameter flow rules, clearing all parameter metrics
+2022-11-25 17:17:21.462 INFO [ParamFlowRuleManager] Parameter flow rules received: {}
+2022-11-25 17:17:21.469 INFO [FlowRuleManager] Flow rules loaded: {}
+2022-11-25 17:17:21.471 INFO [MetricWriter] Creating new MetricWriter, singleFileSize=52428800, totalFileCount=6
+2022-11-25 17:17:21.481 INFO [MetricExtensionProvider] No existing MetricExtension found
+2022-11-25 17:17:22.542 INFO [MetricWriter] New metric file created: ./logs\test-metrics.log.pid15868.2022-11-25
+2022-11-25 17:17:22.549 INFO [MetricWriter] New metric index file created: ./logs\test-metrics.log.pid15868.2022-11-25.idx
+2022-11-25 17:18:22.618 INFO Receiving rule change (type: flow): [{"clusterConfig":{"acquireRefuseStrategy":0,"clientOfflineTime":2000,"fallbackToLocalWhenFail":true,"resourceTimeout":2000,"resourceTimeoutStrategy":0,"sampleCount":10,"strategy":0,"thresholdType":0,"windowIntervalMs":1000},"clusterMode":false,"controlBehavior":0,"count":1.0,"grade":1,"limitApp":"/hello","maxQueueingTimeMs":500,"resource":"test","strategy":0,"warmUpPeriodSec":10}]
+2022-11-25 17:18:22.629 INFO [DynamicSentinelProperty] Config will be updated to: [FlowRule{resource=test, limitApp=/hello, grade=1, count=1.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=ClusterFlowConfig{flowId=null, thresholdType=0, fallbackToLocalWhenFail=true, strategy=0, sampleCount=10, windowIntervalMs=1000}, controller=null}]
+2022-11-25 17:18:22.631 INFO [FlowRuleManager] Flow rules received: {test=[FlowRule{resource=test, limitApp=/hello, grade=1, count=1.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=ClusterFlowConfig{flowId=null, thresholdType=0, fallbackToLocalWhenFail=true, strategy=0, sampleCount=10, windowIntervalMs=1000}, controller=com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultController@3ff1670b}]}
+2022-11-25 17:19:37.758 INFO Receiving rule change (type: flow): [{"clusterConfig":{"acquireRefuseStrategy":0,"clientOfflineTime":2000,"fallbackToLocalWhenFail":true,"resourceTimeout":2000,"resourceTimeoutStrategy":0,"sampleCount":10,"strategy":0,"thresholdType":0,"windowIntervalMs":1000},"clusterMode":false,"controlBehavior":0,"count":1.0,"grade":1,"limitApp":"/hello","maxQueueingTimeMs":500,"resource":"test","strategy":0,"warmUpPeriodSec":10}]
