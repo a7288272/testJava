@@ -1,5 +1,6 @@
 package cn.xuanma.test.controller;
 
+import cn.xuanma.common.vo.RetResult;
 import cn.xuanma.test.utils.OkHttp3Util;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.AmqpTemplate;
@@ -73,5 +74,6 @@ public class HelloController {
         return OkHttp3Util.syncGet(baiduUrl);
     }
 
-
+    @RequestMapping("/retResult")
+    public RetResult<Object> retResult(){ return RetResult.success(); }
 }
